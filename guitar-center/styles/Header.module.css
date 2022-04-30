@@ -1,0 +1,143 @@
+.header {
+    background-color: #262626;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(26 26 26 / 0.8), rgb(26 26 26 / 0.7)), url("../public/img/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    padding: 3rem 0;
+    position: relative;
+}
+
+.navegation {
+    display: flex;
+    column-gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.navegation a {
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+    padding: 0 5px;
+    border-radius: 5px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegation a:hover {
+    background-color: var(--primary);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modelo {
+    color: var(--blanco);
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.modelo h2 {
+    font-size: 6rem;
+}
+
+.resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.precio {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.enlace {
+    margin-top: 1rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--blanco);
+    border: 2px solid var(--primary);
+    background-color: transparent;
+    padding: 1rem 5rem;
+    width: fit-content;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+}
+
+@media (min-width: 992px) {
+    .guiarra {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 400px;
+        animation: mostrarImagen 0.5s ease-in-out;
+    }
+}
+
+@media (min-width: 768px) {
+    .modelo {
+        text-align: left;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .barra {
+        flex-direction: column;
+    }
+
+    .guiarra {
+        display: none;
+    }
+
+    .navegation {
+        margin-top: 2rem;
+    }
+
+    .enlace {
+        width: 100%;
+    }
+}
+
+@keyframes mostrarImagen {
+    0% {
+        opacity: 0;
+        right: 20px;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0;
+    }
+}

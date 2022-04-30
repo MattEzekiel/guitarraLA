@@ -1,0 +1,19 @@
+.alerta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta p {
+    color: #f4faf4;
+    padding: 2rem;
+}
+
+.success {
+    background-color: rgb(4, 157, 4);
+}
+
+.error {
+    background-color: #cb0505;
+}

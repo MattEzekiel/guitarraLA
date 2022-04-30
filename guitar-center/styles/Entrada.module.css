@@ -1,0 +1,63 @@
+.article {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.contenido {
+    padding: 2rem;
+}
+
+.contenido h2 {
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.imagen {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.fecha {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.resumen {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.enlace {
+    margin-top: auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--negro);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+    color: var(--blanco);
+}
+
+.entrada {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.texto {
+    white-space: pre-wrap;
+}
